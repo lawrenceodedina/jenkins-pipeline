@@ -4,6 +4,7 @@ pipeline {
         stage('clone'){
             steps{
                 sh 'echo "cloning repository"'
+                sh 'uname -r'
             }
         }
         stage('test'){
